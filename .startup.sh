@@ -7,7 +7,8 @@ alias wp='cd && clear'
 alias cl='clear'
 alias current='cd ~/Documents/YCPS2So/CS320'
 alias inf='cd ~/Documents/Inform6/inform6Projects'
-alias dia='nano ~/Documents/diary.txt'
+alias dia='nano ~/Documents/diary.txt -t -r 191'
+alias src='source ~/.bashrc'
 
 # functions
 function cs () {
