@@ -1,0 +1,31 @@
+URxvt.transparent:		true
+URxvt.tintColor:		#22ada3
+URxvt.shading:			50
+URxvt.depth:			32
+
+URxvt*cursorColor:		#91cc76
+
+! colors
+URxvt*foreground:		#ecf0e4
+
+URxvt*color0:			#18191a
+URxvt*color1:			#fa4e2f
+URxvt*color2:			#91cc76
+URxvt*color3:			#f7ca88
+URxvt*color4:			#2654eb
+URxvt*color5:			#ba8baf
+URxvt*color6:			#6ad0d4
+URxvt*color7:			#ecf0e4
+URxvt*color8:			#18191a
+URxvt*color9:			#fa4e2f
+URxvt*color10:			#91cc76
+URxvt*color11:			#f7ca88
+URxvt*color12:			#2654eb
+URxvt*color13:			#ba8baf
+URxvt*color14:			#6ad0d4
+URxvt*color15:			#ecf0e4
+
+Xcursor.size:			14W
+URxvt.font:				xft:monospace:size=14
+URxvt.scrollBar:		false
+URxvt.url-launcher:		/usr/bin/firefox

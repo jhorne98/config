@@ -1,17 +1,15 @@
 # should be sourced in ~/.bashrc
 
+PS1="\[\033[01;32m\][\[\033[01;31m\]\u\[\033[01;32m\]@\h\[\033[01;37m\] \w\[\033[01;32m\]]\$\[\033[00m\] "
+
 # aliases
-alias ret='echo -e "Restarting network-manager... " && sudo service network-manager restart && echo -e "Done"'
 alias wp='cd && clear'
 alias cl='clear' #ctrl-l
-
-# quick dir pullup for semester
-alias cur='cd ~/Documents/YCPS1Se'
-alias scs='ssh jhorne@cscluster.ycp.edu'
+alias ll='ls -la'
+alias la='ls -a'
 
 #alias inf='cd ~/Documents/Inform6/inform6Projects'
-alias dwf='cd ~/Documents/df_44_12_linux/df_linux && ./df && cd'
-alias dia='nano -t ~/Documents/diary.txt'
+#alias dwf='cd ~/Documents/df_44_12_linux/df_linux && ./df && cd'
 alias src='source ~/.bashrc'
 
 # functions
@@ -19,18 +17,13 @@ function cs () {
 	cd "$@" && ls 
 }
 
-function agi () {
-    sudo apt-get install "$@"
+function inst () {
+    sudo pacman -Syu "$@"
 }
 
 function ltyp () {
 	la | grep -E "\.${@}$"
 }
-
-# run commands
-if [[ ! $TERM =~ screen ]]; then
-    exec tmux
-fi
 
 # getting sick of this tqbh
 #fortune -a | cowsay
