@@ -1,6 +1,11 @@
 # should be sourced in ~/.bashrc
 
-PS1="\[\033[01;32m\][\[\033[01;31m\]\u\[\033[01;32m\]@\h\[\033[01;37m\] \w\[\033[01;32m\]]\$\[\033[00m\] "
+# PS1 with current git branch
+parse_git_branch() {
+	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+
+PS1="\[\033[01;32m\][\[\033[01;31m\]\u\[\033[01;32m\]@\h\[\033[01;37m\] \w\[\033[01;32m\]]\[\033[01;34m\]\$(parse_git_branch)\[\033[01;32m\]\$\[\033[00m\] "
 
 # aliases
 alias wp='cd && clear'
