@@ -10,8 +10,10 @@ PS1="\[\033[01;32m\][\[\033[01;31m\]\u\[\033[01;32m\]@\h\[\033[01;37m\] \w\[\033
 # aliases
 alias wp='cd && clear'
 alias cl='clear' #ctrl-l
+alias cls='clear'
 alias ll='ls -la'
 alias la='ls -a'
+alias gka='gitg --all &'
 
 #alias inf='cd ~/Documents/Inform6/inform6Projects'
 #alias dwf='cd ~/Documents/df_44_12_linux/df_linux && ./df && cd'
