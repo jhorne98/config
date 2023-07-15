@@ -13,7 +13,7 @@ alias cl='clear' #ctrl-l
 alias cls='clear'
 alias ll='ls -la'
 alias la='ls -a'
-alias gka='gitg --all &'
+alias gka='gitk --all &'
 
 #alias inf='cd ~/Documents/Inform6/inform6Projects'
 #alias dwf='cd ~/Documents/df_44_12_linux/df_linux && ./df && cd'
