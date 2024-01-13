@@ -25,7 +25,7 @@ function cs () {
 }
 
 function inst () {
-    sudo pacman -Syu "$@"
+    sudo apt install "$@"
 }
 
 function ltyp () {
