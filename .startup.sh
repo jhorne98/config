@@ -12,11 +12,11 @@ VIOLET='\[\033[01;35m\]'
 WHITE='\[\033[01;37m\]'
  
 function color_my_prompt {
-  local __user_and_host="$CYAN\u$LIGHT_GRAY@$RED\h"
+  local __user_and_host="$CYAN\u$RED@\h"
   local __cur_location="$GREEN\W"           # capital 'W': current directory, small 'w': full file path
   local __git_branch_color="$GREEN"
-  local __prompt_tail="$VIOLET$"
-  local __user_input_color="$LIGHT_GRAY"
+  local __prompt_tail="$GREEN$"
+  local __user_input_color="$WHITE"
   local __git_branch=$(__git_ps1);
   
   # colour branch name depending on state
@@ -31,7 +31,7 @@ function color_my_prompt {
   fi
    
   # Build the PS1 (Prompt String)
-  PS1="$WHITE[$__user_and_host $__cur_location$WHITE]$__git_branch_color$__git_branch $__prompt_tail$__user_input_color "
+  PS1="$WHITE[$__user_and_host $__cur_location$WHITE]$__git_branch_color$__git_branch$__prompt_tail$__user_input_color "
 }
  
 # configure PROMPT_COMMAND which is executed each time before PS1
@@ -56,8 +56,10 @@ alias ll='ls -la'
 alias la='ls -a'
 alias gka='gitk --all &'
 
+alias lc='r2modman --no-sandbox'
 #alias inf='cd ~/Documents/Inform6/inform6Projects'
 #alias dwf='cd ~/Documents/df_44_12_linux/df_linux && ./df && cd'
+
 alias src='source ~/.bashrc'
 
 # functions
