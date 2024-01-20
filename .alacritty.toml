@@ -8,6 +8,9 @@ decorations = "Full"
 opacity = 0.75
 dynamic_title = true
 
+[shell]
+program = "tmux"
+
 [font]
 size = 16
 
