@@ -5,24 +5,24 @@ TERM = "xterm-256color"
 
 [window]
 decorations = "Full"
-opacity = 0.75
+opacity = 0.8
 dynamic_title = true
 
 [shell]
 program = "tmux"
 
 [font]
-size = 16
+size = 14
 
 [font.normal]
-family = "Agave Nerd Font"
+family = "Bitstream Vera Sans Mono"
 style = "Regular"
 
 [colors]
 
 [colors.primary]
 background = "#0A0E14"
-foreground = "#B3B1AD"
+foreground = "#eafbff"
 
 [colors.normal]
 black = "#01060E"
