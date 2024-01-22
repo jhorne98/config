@@ -3,8 +3,11 @@ filetype off
 syntax on
 color slate
 filetype plugin indent on
+
 set list
+set lcs+=eol:󱞣
 set lcs+=space:·
+
 set number
 set modelines=0
 
