@@ -60,13 +60,16 @@ alias gka='gitk --all &'
 
 alias lc='r2modman --no-sandbox &'
 #alias inf='cd ~/Documents/Inform6/inform6Projects'
-#alias dwf='cd ~/Documents/df_44_12_linux/df_linux && ./df && cd'
+function dwf () {
+    /home/joel/Downloads/df_linux/df &
+    sudo /home/joel/Downloads/df_linux/DwarfTherapist &
+}
 
 alias src='source ~/.bashrc'
 
 # functions
 function cs () {
-	cd "$@" && ls 
+    cd "$@" && ls 
 }
 
 function inst () {
@@ -74,7 +77,7 @@ function inst () {
 }
 
 function ltyp () {
-	la | grep -E "\.${@}$"
+    la | grep -E "\.${@}$"
 }
 
 # getting sick of this tqbh
