@@ -24,6 +24,10 @@ style = "Regular"
 background = "#0A0E14"
 foreground = "#eafbff"
 
+[window.dimensions]
+columns = 80
+lines = 30
+
 [colors.normal]
 black = "#01060E"
 red = "#EA6C73"
