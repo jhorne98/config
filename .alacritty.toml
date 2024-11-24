@@ -5,7 +5,7 @@ TERM = "xterm-256color"
 
 [window]
 decorations = "Full"
-opacity = 0.8
+opacity = 0.95
 dynamic_title = true
 
 [shell]
