@@ -57,6 +57,7 @@ alias cls='clear'
 alias ll='ls -la'
 alias la='ls -a'
 alias gka='gitk --all &'
+alias tkill='tmux kill-session -a'
 
 alias lc='r2modman --no-sandbox &'
 #alias inf='cd ~/Documents/Inform6/inform6Projects'
