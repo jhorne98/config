@@ -15,7 +15,7 @@ BOLD_WHITE="\[\033[01;37m\]"
  
 function color_my_prompt {
   local __user_and_host="$CYAN\u$BOLD_GREEN@\h"
-  local __cur_location="$BOLD_WHITE\W"           # capital 'W': current directory, small 'w': full file path
+  local __cur_location="$BOLD_WHITE\w"           # capital 'W': current directory, small 'w': full file path
   local __git_branch_color="$GREEN"
   local __prompt_tail="$BOLD_GREEN\n$"
   local __user_input_color="$WHITE"
@@ -49,6 +49,8 @@ if [ -f ~/.git-prompt.sh ]; then
   GIT_PS1_SHOWCOLORHINTS=true
   . ~/.git-prompt.sh
 fi
+
+export PATH="$PATH:/opt/nvim-linux64/bin"
 
 # aliases
 alias wp='cd && clear'
