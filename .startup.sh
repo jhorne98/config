@@ -81,5 +81,10 @@ function ltyp () {
     la | grep -E "\.${@}$"
 }
 
+function dsktp () {
+    sudo desktop-file-install $@
+    sudo update-desktop-database
+}
+
 # getting sick of this tqbh
 #fortune -a | cowsay
