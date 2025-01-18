@@ -12,7 +12,7 @@ dynamic_title = true
 program = "tmux"
 
 [font]
-size = 14
+size = 13
 
 [font.normal]
 family = "Bitstream Vera Sans Mono"
