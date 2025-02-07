@@ -2,6 +2,8 @@ call plug#begin()
 Plug 'whatyouhide/vim-gotham'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'dense-analysis/ale'
+Plug 'preservim/nerdtree'
 call plug#end()
 
 set laststatus=2
