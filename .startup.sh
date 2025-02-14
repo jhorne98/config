@@ -50,6 +50,10 @@ if [ -f ~/.git-prompt.sh ]; then
   . ~/.git-prompt.sh
 fi
 
+export VISUAL=vim
+export GIT_EDITOR="$VISUAL"
+export EDITOR="$VISUAL"
+
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
 # aliases
