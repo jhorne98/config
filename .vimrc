@@ -5,6 +5,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'dense-analysis/ale'
 Plug 'preservim/nerdtree'
+Plug 'rust-lang/rust.vim'
 call plug#end()
 
 set laststatus=2
