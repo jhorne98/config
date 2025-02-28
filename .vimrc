@@ -2,6 +2,7 @@ call plug#begin()
 Plug 'whatyouhide/vim-gotham'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
 Plug 'dense-analysis/ale'
 Plug 'preservim/nerdtree'
 call plug#end()
