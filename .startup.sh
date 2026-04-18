@@ -69,7 +69,7 @@ alias gfp='git fetch -p'
 alias tkill='tmux kill-session -a'
 alias gpp='git log --all --decorate --oneline --graph'
 
-alias lc='r2modman --no-sandbox &'
+#alias lc='r2modman --no-sandbox &'
 #alias inf='cd ~/Documents/Inform6/inform6Projects'
 #function dwf () {
 #    /home/joel/Downloads/df_linux/df &
