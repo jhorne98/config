@@ -68,7 +68,7 @@ alias gitp='git push'
 alias gfp='git fetch -p'
 alias tkill='tmux kill-session -a'
 alias gpp='git log --all --decorate --oneline --graph'
-alias ytd='yt-dlp --cookies-from-browser firefox'
+alias ytd='yt-dlp'
 alias cdsc='cd /mnt/Lore/Career/PSH'
 
 #alias lc='r2modman --no-sandbox &'
