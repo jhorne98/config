@@ -70,6 +70,7 @@ alias tkill='tmux kill-session -a'
 alias gpp='git log --all --decorate --oneline --graph'
 alias ytd='yt-dlp'
 alias cdsc='cd /mnt/Lore/Career/PSH'
+alias st='syncthing'
 
 #alias lc='r2modman --no-sandbox &'
 #alias inf='cd ~/Documents/Inform6/inform6Projects'
