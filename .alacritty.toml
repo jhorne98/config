@@ -12,10 +12,10 @@ dynamic_title = true
 program = "tmux"
 
 [font]
-size = 13
+size = 16
 
 [font.normal]
-family = "Bitstream Vera Sans Mono"
+family = "Agave Nerd Font"
 style = "Regular"
 
 [colors]
@@ -25,7 +25,7 @@ background = "#0A0E14"
 foreground = "#eafbff"
 
 [window.dimensions]
-columns = 100
+columns = 110
 lines = 30
 
 [colors.normal]
