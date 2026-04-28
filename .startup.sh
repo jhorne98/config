@@ -69,7 +69,11 @@ alias gfp='git fetch -p'
 alias tkill='tmux kill-session -a'
 alias gpp='git log --all --decorate --oneline --graph'
 alias ytd='yt-dlp'
-alias cdsc='cd /mnt/Lore/Career/PSH'
+if [ "$HOSTNAME" = joel-desktop ]; then
+    alias cdsc='cd /mnt/Lore/Career/PSH'
+else
+    alias cdsc='cd ~/Documents/Career/PSH'
+fi
 alias st='syncthing'
 
 #alias lc='r2modman --no-sandbox &'
