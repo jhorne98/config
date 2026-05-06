@@ -72,12 +72,15 @@ alias ytd='yt-dlp'
 alias cdsc='cd /mnt/Lore/Career/PSH'
 alias st='syncthing'
 
-#alias lc='r2modman --no-sandbox &'
-#alias inf='cd ~/Documents/Inform6/inform6Projects'
-#function dwf () {
-#    /home/joel/Downloads/df_linux/df &
-#    sudo /home/joel/Downloads/df_linux/DwarfTherapist &
-#}
+# hahah this works?
+: << 'COMMENT'
+alias lc='r2modman --no-sandbox &'
+alias inf='cd ~/Documents/Inform6/inform6Projects'
+function dwf () {
+    /home/joel/Downloads/df_linux/df &
+    sudo /home/joel/Downloads/df_linux/DwarfTherapist &
+}
+COMMENT
 
 alias src='source ~/.bashrc'
 
@@ -98,6 +101,3 @@ function dsktp () {
     sudo desktop-file-install $@
     sudo update-desktop-database
 }
-
-# getting sick of this tqbh
-#fortune -a | cowsay
