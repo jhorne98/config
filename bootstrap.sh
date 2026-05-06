@@ -1,14 +1,14 @@
 echo "Start Bootstrap"
 
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-echo "Installed Rust"
-
 if command -v apt > /dev/null 2>&1; then
     apt install git tmux vim 
 elif command -v dnf > /dev/null 2>&1; then
     dnf install git tmux vim
 fi
 echo "Installed Prerequisites"
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+echo "Installed Rust"
 
 ln -s .startup.sh ~/.startup.sh
 echo ". ~/.startup.sh" >> ~/.bashrc
@@ -24,3 +24,5 @@ echo "Installed vim"
 
 ln -s .alacritty.toml ~/.alacritty.toml
 ln -s yt-dlp.conf ~/yt-dlp.conf
+
+echo "Installation finished"
