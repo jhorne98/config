@@ -13,6 +13,7 @@ tmux && tmux source ~/.tmux.conf && exit
 echo "Installed tmux"
 
 ln -s $PWD/.vimrc ~/.vimrc
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 echo "Installed vim"
 
 ln -s $PWD/.alacritty.toml ~/.alacritty.toml
