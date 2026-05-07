@@ -1,12 +1,5 @@
 echo "Start Bootstrap"
 
-if command -v apt > /dev/null 2>&1; then
-    apt install git tmux vim 
-elif command -v dnf > /dev/null 2>&1; then
-    dnf install git tmux vim
-fi
-echo "Installed Prerequisites"
-
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 echo "Installed Rust"
 
@@ -16,7 +9,7 @@ echo "Installed startup script"
 
 ln -s .tmux.conf ~/.tmux.conf
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-tmux source ~/.tmux.conf
+tmux && tmux source ~/.tmux.conf && exit
 echo "Installed tmux"
 
 ln -s .vimrc ~/.vimrc
