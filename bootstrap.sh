@@ -3,6 +3,7 @@ echo "Start Bootstrap"
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 echo "Installed Rust"
 
+curl -L https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh -o ~/.git-prompt.sh
 ln -s $PWD/.startup.sh ~/.startup.sh
 echo ". ~/.startup.sh" >> ~/.bashrc
 echo "Installed startup script"
