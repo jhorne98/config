@@ -55,6 +55,7 @@ export GIT_EDITOR="$VISUAL"
 export EDITOR="$VISUAL"
 
 export PATH="$PATH:/opt/nvim-linux64/bin"
+export PATH="$PATH:~/.local/bin"
 
 # aliases
 alias wp='cd && clear'
