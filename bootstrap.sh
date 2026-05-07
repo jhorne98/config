@@ -19,6 +19,7 @@ echo "Installed vim"
 ln -s $PWD/.alacritty.toml ~/.alacritty.toml
 
 ln -s $PWD/yt-dlp.conf ~/yt-dlp.conf
+mkdir ~/.local/bin/
 curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o ~/.local/bin/yt-dlp
 chmod a+rx ~/.local/bin/yt-dlp
 yt-dlp -U # ensure up-to-date
