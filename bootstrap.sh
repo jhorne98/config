@@ -9,7 +9,6 @@ echo "Installed startup script"
 
 ln -s $PWD/.tmux.conf ~/.tmux.conf
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-tmux && tmux source ~/.tmux.conf && exit
 echo "Installed tmux"
 
 ln -s $PWD/.vimrc ~/.vimrc
@@ -17,6 +16,11 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 echo "Installed vim"
 
 ln -s $PWD/.alacritty.toml ~/.alacritty.toml
-ln -s $PWD/yt-dlp.conf ~/yt-dlp.conf
 
-echo "Installation finished"
+ln -s $PWD/yt-dlp.conf ~/yt-dlp.conf
+curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o ~/.local/bin/yt-dlp
+chmod a+rx ~/.local/bin/yt-dlp
+yt-dlp -U # ensure up-to-date
+echo "Installed yt-dlp"
+
+echo "Installation Finished"
