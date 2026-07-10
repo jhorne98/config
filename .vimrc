@@ -46,6 +46,13 @@ let g:ale_fixers = {
     \   'rust': ['rustfmt'],
     \ }
 
+let g:ale_linters = {
+    \   'rust': ['analyzer']
+    \ }
+
+set completeopt=menu,menuone,preview,noselect,noinsert
+let g:ale_completion_enabled = 1
+
 set noshowmode
 
 map <C-o> :NERDTreeToggle<CR>
