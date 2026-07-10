@@ -90,6 +90,11 @@ COMMENT
 alias src='source ~/.bashrc'
 
 # functions
+
+function bhgrp () {
+    cat ~/.bash_history | grep $@
+}
+
 function cs () {
     cd "$@" && ls 
 }
