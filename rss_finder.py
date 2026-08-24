@@ -40,17 +40,18 @@ def main():
             # Extract and print the URL
             urls.append(url['href'])
 
-
         filtered_urls = [url for url in urls if rss_re.search(url)]
         for i, url in enumerate(filtered_urls):
             if 'https://' not in url:
                 filtered_urls[i] = top_url + url
 
-        # Find any rss links inside <script> tags
-        for script in soup.find_all('script'):
-            match = script_rss_re.search(script.text)
-            if match is not None:
-                filtered_urls.append(match.group())
+        # If the rss xml isn't linked in <a> or <link> tags, check scripts
+        if len(filtered_urls) == 0:
+            # Find any rss links inside <script> tags
+            for script in soup.find_all('script'):
+                match = script_rss_re.search(script.text)
+                if match is not None:
+                    filtered_urls.append(match.group())
 
         if len(filtered_urls) > 0:
             for url in filtered_urls:
