@@ -91,6 +91,10 @@ alias src='source ~/.bashrc'
 
 # functions
 
+function cpyup() {
+    scp -r "$@" joel@mediaserv:~/temp/
+}
+
 function bhgrp () {
     cat ~/.bash_history | grep $@
 }
