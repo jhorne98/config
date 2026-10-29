@@ -33,7 +33,7 @@ function color_my_prompt {
   fi
    
   # Build the PS1 (Prompt String)
-  PS1="$WHITE[$__user_and_host $__cur_location$WHITE$__git_branch$WHITE]$__prompt_tail$__user_input_color "
+  PS1="${VIRTUAL_ENV:+(${VIRTUAL_ENV##*/}) }$WHITE[$__user_and_host $__cur_location$WHITE$__git_branch$WHITE]$__prompt_tail$__user_input_color "
 }
  
 # configure PROMPT_COMMAND which is executed each time before PS1
