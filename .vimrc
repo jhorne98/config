@@ -8,6 +8,8 @@ Plug 'preservim/nerdtree'
 Plug 'rust-lang/rust.vim'
 call plug#end()
 
+set mouse=a
+
 set laststatus=2
 set nocompatible
 filetype off
